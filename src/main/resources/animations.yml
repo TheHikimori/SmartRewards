@@ -1,0 +1,38 @@
+# Анимации при получении награды
+
+claim:
+  title:
+    enabled: true
+    title: "<gradient:#FFD700:#FF8C00>Награда!</gradient>"
+    subtitle: "<gray>{reward}</gray>"
+    fade-in: 10
+    stay: 40
+    fade-out: 10
+  actionbar:
+    enabled: true
+    text: "<green>+ {reward}</green>"
+  bossbar:
+    enabled: false
+    text: "<gold>Награда получена!</gold>"
+    color: YELLOW
+    style: SOLID
+    duration: 60
+  firework:
+    enabled: true
+    power: 1
+  particles:
+    enabled: true
+    type: TOTEM
+    count: 30
+  sound:
+    enabled: true
+    use-sounds-yml: true
+
+streak:
+  title:
+    enabled: true
+    title: "<gold>Серия: {streak}</gold>"
+    subtitle: "<yellow>День {day}</yellow>"
+    fade-in: 10
+    stay: 30
+    fade-out: 10

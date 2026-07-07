@@ -1,0 +1,25 @@
+# Звуки при получении награды
+
+claim:
+  enabled: true
+  sound: ENTITY_PLAYER_LEVELUP
+  volume: 1.0
+  pitch: 1.2
+
+streak:
+  enabled: true
+  sound: UI_TOAST_CHALLENGE_COMPLETE
+  volume: 1.0
+  pitch: 1.0
+
+error:
+  enabled: true
+  sound: ENTITY_VILLAGER_NO
+  volume: 1.0
+  pitch: 0.8
+
+menu-open:
+  enabled: true
+  sound: BLOCK_CHEST_OPEN
+  volume: 0.5
+  pitch: 1.0

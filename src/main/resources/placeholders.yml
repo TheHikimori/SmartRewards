@@ -1,0 +1,15 @@
+# SmartRewards — форматы плейсхолдеров PlaceholderAPI
+
+formats:
+  streak: "{value}"
+  next: "{value}"
+  remaining: "{value}"
+  claimed: "{value}"
+  time: "{value}"
+  month: "{value}"
+  week: "{value}"
+  available: "{value}"
+
+defaults:
+  no-data: "0"
+  not-available: "N/A"

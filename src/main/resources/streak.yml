@@ -1,0 +1,49 @@
+enabled: true
+
+# Бонусы за достижение определённой серии входов подряд
+# Выдаются автоматически при достижении нужного количества дней
+rewards:
+  3:
+    name: "Серия 3 дня"
+    display:
+      material: GOLD_NUGGET
+      name: "<yellow>3 дня подряд</yellow>"
+      lore:
+        - "<gray>Бонус за серию</gray>"
+    actions:
+      - type: MONEY
+        amount: 150
+      - type: MESSAGE
+        text: "<gold>Бонус за 3 дня серии!</gold>"
+  7:
+    name: "Серия 7 дней"
+    display:
+      material: GOLD_INGOT
+      name: "<gold>7 дней подряд</gold>"
+    actions:
+      - type: MONEY
+        amount: 500
+      - type: COMMAND
+        executor: CONSOLE
+        command: "crate key give {player} streak 1"
+  14:
+    name: "Серия 14 дней"
+    display:
+      material: DIAMOND
+      name: "<aqua>14 дней подряд</aqua>"
+    actions:
+      - type: MONEY
+        amount: 1000
+      - type: ITEM
+        material: DIAMOND
+        amount: 2
+  30:
+    name: "Серия 30 дней"
+    display:
+      material: NETHER_STAR
+      name: "<light_purple>30 дней подряд</light_purple>"
+    actions:
+      - type: MONEY
+        amount: 5000
+      - type: XP
+        amount: 1000

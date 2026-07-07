@@ -1,0 +1,11 @@
+enabled: true
+
+# Множитель награды для VIP (smartrewards.vip)
+multiplier: 1.5
+
+# Дополнительные действия для VIP (добавляются к основной награде)
+bonus-actions:
+  - type: MONEY
+    amount: 50
+  - type: MESSAGE
+    text: "<light_purple>VIP бонус активирован!</light_purple>"

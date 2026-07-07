@@ -1,0 +1,159 @@
+enabled: true
+
+# Награды по дням серии (день 1, день 2, ...)
+rewards:
+  1:
+    name: "День 1"
+    display:
+      material: GOLD_INGOT
+      name: "<yellow>День 1</yellow>"
+      lore:
+        - "<gray>Награда за первый день</gray>"
+        - "<green>100$</green>"
+      custom-model-data: 0
+    claimed-display:
+      material: GRAY_DYE
+      name: "<gray>День 1 — получено</gray>"
+      lore:
+        - "<dark_gray>Уже забрано</dark_gray>"
+    locked-display:
+      material: BARRIER
+      name: "<red>День 1 — заблокировано</red>"
+    actions:
+      - type: MONEY
+        amount: 100
+      - type: MESSAGE
+        text: "<green>+100$ за первый день!</green>"
+  2:
+    name: "День 2"
+    display:
+      material: GOLD_INGOT
+      name: "<yellow>День 2</yellow>"
+      lore:
+        - "<gray>200$</gray>"
+    claimed-display:
+      material: GRAY_DYE
+      name: "<gray>День 2 — получено</gray>"
+    locked-display:
+      material: BARRIER
+      name: "<red>День 2 — заблокировано</red>"
+    actions:
+      - type: MONEY
+        amount: 200
+  3:
+    name: "День 3"
+    display:
+      material: TRIPWIRE_HOOK
+      name: "<aqua>День 3 — Ключ</aqua>"
+      lore:
+        - "<gray>Ключ от кейса</gray>"
+    claimed-display:
+      material: GRAY_DYE
+      name: "<gray>День 3 — получено</gray>"
+    locked-display:
+      material: BARRIER
+      name: "<red>День 3 — заблокировано</red>"
+    actions:
+      - type: COMMAND
+        executor: CONSOLE
+        command: "crate key give {player} daily 1"
+      - type: MONEY
+        amount: 300
+  4:
+    name: "День 4"
+    display:
+      material: CHEST
+      name: "<gold>День 4 — Кейс</gold>"
+    claimed-display:
+      material: GRAY_DYE
+      name: "<gray>День 4 — получено</gray>"
+    locked-display:
+      material: BARRIER
+      name: "<red>День 4 — заблокировано</red>"
+    actions:
+      - type: COMMAND
+        executor: CONSOLE
+        command: "crate give {player} daily"
+  5:
+    name: "День 5"
+    display:
+      material: NETHERITE_INGOT
+      name: "<light_purple>День 5 — Редкий предмет</light_purple>"
+    claimed-display:
+      material: GRAY_DYE
+      name: "<gray>День 5 — получено</gray>"
+    locked-display:
+      material: BARRIER
+      name: "<red>День 5 — заблокировано</red>"
+    actions:
+      - type: ITEM
+        material: NETHERITE_INGOT
+        amount: 1
+        name: "<light_purple>Награда серии</light_purple>"
+      - type: MONEY
+        amount: 500
+  6:
+    name: "День 6"
+    display:
+      material: DIAMOND
+      name: "<aqua>День 6</aqua>"
+    claimed-display:
+      material: GRAY_DYE
+      name: "<gray>День 6 — получено</gray>"
+    locked-display:
+      material: BARRIER
+      name: "<red>День 6 — заблокировано</red>"
+    actions:
+      - type: ITEM
+        material: DIAMOND
+        amount: 3
+      - type: MONEY
+        amount: 600
+  7:
+    name: "День 7"
+    display:
+      material: EMERALD_BLOCK
+      name: "<green>День 7 — Бонус</green>"
+    claimed-display:
+      material: GRAY_DYE
+      name: "<gray>День 7 — получено</gray>"
+    locked-display:
+      material: BARRIER
+      name: "<red>День 7 — заблокировано</red>"
+    actions:
+      - type: MONEY
+        amount: 1000
+      - type: XP
+        amount: 500
+
+# Награда за первый вход на сервер
+first-join:
+  enabled: true
+  name: "Приветственная награда"
+  actions:
+    - type: MONEY
+      amount: 500
+    - type: COMMAND
+      executor: CONSOLE
+      command: "kit starter {player}"
+    - type: MESSAGE
+      text: "<gradient:#FFD700:#FF8C00>Добро пожаловать!</gradient>"
+
+# Подарки за общее количество входов
+join-milestones:
+  10:
+    name: "10 входов"
+    actions:
+      - type: MONEY
+        amount: 200
+  50:
+    name: "50 входов"
+    actions:
+      - type: MONEY
+        amount: 1000
+  100:
+    name: "100 входов"
+    actions:
+      - type: COMMAND
+        executor: CONSOLE
+        command: "crate key give {player} veteran 1"

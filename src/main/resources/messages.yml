@@ -1,0 +1,60 @@
+# SmartRewards — сообщения (MiniMessage + HEX + Legacy)
+
+prefix: "{prefix}"
+
+no-permission: "<red>У вас нет прав для этого действия.</red>"
+player-only: "<red>Эта команда доступна только игрокам.</red>"
+player-not-found: "<red>Игрок <yellow>{player}</yellow> не найден.</red>"
+reload-success: "<green>Конфигурация SmartRewards перезагружена.</green>"
+reload-failed: "<red>Ошибка при перезагрузке: {error}</red>"
+
+reward-claimed: "<green>Вы получили награду: <yellow>{reward}</yellow>!</green>"
+reward-already-claimed: "<yellow>Вы уже получили эту награду сегодня.</yellow>"
+reward-not-available: "<red>Эта награда пока недоступна.</red>"
+reward-cooldown: "<yellow>Следующая награда через: <white>{time}</white></yellow>"
+
+streak-info: "<gold>Серия входов: <yellow>{streak}</yellow> дней</gold>"
+streak-reset: "<red>Ваша серия входов была сброшена.</red>"
+streak-continued: "<green>Серия продолжается! День <yellow>{streak}</yellow></green>"
+
+first-join: "<gradient:#FFD700:#FF8C00>Добро пожаловать на сервер! Вы получили приветственную награду!</gradient>"
+
+auto-claim: "<green>Ежедневная награда автоматически выдана!</green>"
+
+vip-bonus: "<light_purple>VIP бонус: <yellow>x{multiplier}</yellow></light_purple>"
+
+playtime-reward: "<aqua>Награда за игровое время: <yellow>{reward}</yellow></aqua>"
+
+weekly-unlocked: "<gold>Еженедельная награда разблокирована!</gold>"
+monthly-unlocked: "<light_purple>Ежемесячная награда разблокирована!</light_purple>"
+
+next-reward: "<gray>Следующая награда: <yellow>{reward}</yellow> (день {day})</gray>"
+remaining-time: "<gray>Осталось до сброса: <yellow>{time}</yellow></gray>"
+
+reset-success: "<green>Данные игрока <yellow>{player}</yellow> сброшены.</green>"
+give-success: "<green>Награда <yellow>{type}</yellow> выдана игроку <yellow>{player}</yellow>.</green>"
+give-failed: "<red>Не удалось выдать награду: {error}</red>"
+
+info-header: "<gold>=== SmartRewards: {player} ===</gold>"
+info-streak: "<gray>Серия: <yellow>{streak}</yellow></gray>"
+info-total-joins: "<gray>Всего входов: <yellow>{joins}</yellow></gray>"
+info-playtime: "<gray>Игровое время: <yellow>{playtime}</yellow></gray>"
+info-last-claim: "<gray>Последний claim: <yellow>{date}</yellow></gray>"
+info-missed: "<gray>Пропущено дней: <yellow>{missed}</yellow></gray>"
+
+backup-success: "<green>Резервная копия создана: <yellow>{file}</yellow></green>"
+backup-failed: "<red>Ошибка создания резервной копии: {error}</red>"
+restore-success: "<green>Данные восстановлены из: <yellow>{file}</yellow></green>"
+restore-failed: "<red>Ошибка восстановления: {error}</red>"
+restore-no-backups: "<red>Резервные копии не найдены.</red>"
+
+editor-disabled: "<red>Редактор отключён в конфигурации.</red>"
+invalid-reward-type: "<red>Неизвестный тип награды: {type}</red>"
+
+help:
+  - "<gold>=== SmartRewards ===</gold>"
+  - "<yellow>/rewards</yellow> — открыть меню"
+  - "<yellow>/rewards claim</yellow> — получить награду"
+  - "<yellow>/rewards streak</yellow> — серия входов"
+  - "<yellow>/rewards next</yellow> — следующая награда"
+  - "<yellow>/rewards info [игрок]</yellow> — информация"

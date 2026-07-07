@@ -1,0 +1,32 @@
+# SmartRewards — настройки базы данных
+
+type: YAML
+# Доступные типы: YAML, SQLITE, MYSQL, MARIADB
+
+sqlite:
+  file: database.db
+
+mysql:
+  host: localhost
+  port: 3306
+  database: smartrewards
+  username: root
+  password: password
+  table-prefix: sr_
+  use-ssl: false
+
+mariadb:
+  host: localhost
+  port: 3306
+  database: smartrewards
+  username: root
+  password: password
+  table-prefix: sr_
+  use-ssl: false
+
+pool:
+  maximum-pool-size: 10
+  minimum-idle: 2
+  connection-timeout: 30000
+  idle-timeout: 600000
+  max-lifetime: 1800000

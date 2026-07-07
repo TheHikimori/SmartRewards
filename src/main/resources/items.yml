@@ -1,0 +1,19 @@
+# Шаблоны предметов для GUI и наград
+
+templates:
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+    custom-model-data: 0
+  available:
+    material: LIME_STAINED_GLASS_PANE
+    name: "<green>Доступно</green>"
+  claimed:
+    material: RED_STAINED_GLASS_PANE
+    name: "<red>Получено</red>"
+  locked:
+    material: BLACK_STAINED_GLASS_PANE
+    name: "<dark_gray>Заблокировано</dark_gray>"
+  today:
+    material: YELLOW_STAINED_GLASS_PANE
+    name: "<yellow>Сегодня</yellow>"

@@ -1,0 +1,60 @@
+# SmartRewards — основные настройки
+
+settings:
+  # Автоматическая выдача награды при входе
+  auto-claim: false
+  # Интервал автосохранения данных (секунды)
+  auto-save-interval: 300
+  # Часовой пояс для расчёта дней (например Europe/Moscow)
+  timezone: UTC
+  # Префикс плагина (используется в сообщениях)
+  prefix: "<gradient:#FFD700:#FF8C00>[SmartRewards]</gradient> "
+
+features:
+  daily: true
+  weekly: true
+  monthly: true
+  first-join: true
+  streak: true
+  playtime: true
+  special: true
+  vip: true
+  seasonal: true
+  event: true
+
+streak:
+  enabled: true
+  # Разрешить пропуск дней без сброса серии
+  allow-miss-days: true
+  # Максимум пропущенных дней при allow-miss-days: true
+  max-missed-days: 1
+  # Сбрасывать серию при превышении max-missed-days
+  reset-on-miss: true
+  # Сохранять серию при пропуске (альтернатива reset-on-miss)
+  preserve-streak: false
+
+weekly:
+  # Дней подряд для еженедельной награды
+  required-days: 7
+
+monthly:
+  # Дней подряд для ежемесячной награды
+  required-days: 30
+
+playtime:
+  # Интервал проверки игрового времени (секунды)
+  check-interval: 60
+
+logging:
+  enabled: true
+  # Файл логов относительно папки плагина
+  file: logs/rewards.log
+  # Логировать в консоль
+  console: true
+
+editor:
+  enabled: true
+
+backup:
+  folder: backups
+  max-backups: 10

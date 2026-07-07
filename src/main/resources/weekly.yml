@@ -1,0 +1,18 @@
+enabled: true
+
+# Выдаётся после required-days (из config.yml) ежедневных наград подряд
+reward:
+  name: "Еженедельная награда"
+  display:
+    material: ENDER_CHEST
+    name: "<gold>Еженедельная награда</gold>"
+    lore:
+      - "<gray>7 дней подряд!</gray>"
+  actions:
+    - type: MONEY
+      amount: 5000
+    - type: COMMAND
+      executor: CONSOLE
+      command: "crate give {player} weekly"
+    - type: MESSAGE
+      text: "<gold>Еженедельная награда получена!</gold>"

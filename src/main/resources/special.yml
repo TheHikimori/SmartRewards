@@ -1,0 +1,75 @@
+enabled: true
+
+rewards:
+  summer:
+    name: "Летняя награда"
+    season: SUMMER
+    months: [6, 7, 8]
+    display:
+      material: SUNFLOWER
+      name: "<yellow>Летняя награда</yellow>"
+    actions:
+      - type: MONEY
+        amount: 500
+      - type: MESSAGE
+        text: "<yellow>Летний бонус!</yellow>"
+  winter:
+    name: "Зимняя награда"
+    season: WINTER
+    months: [12, 1, 2]
+    display:
+      material: SNOWBALL
+      name: "<aqua>Зимняя награда</aqua>"
+    actions:
+      - type: MONEY
+        amount: 500
+  newyear:
+    name: "Новый год"
+    event: newyear
+    date-range:
+      start: "12-25"
+      end: "01-10"
+    display:
+      material: FIREWORK_ROCKET
+      name: "<red>Новогодняя награда</red>"
+    actions:
+      - type: MONEY
+        amount: 2026
+      - type: FIREWORK
+        power: 2
+  halloween:
+    name: "Хэллоуин"
+    event: halloween
+    date-range:
+      start: "10-25"
+      end: "11-02"
+    display:
+      material: JACK_O_LANTERN
+      name: "<gold>Хэллоуин</gold>"
+    actions:
+      - type: MONEY
+        amount: 666
+  easter:
+    name: "Пасха"
+    event: easter
+    date-range:
+      start: "04-01"
+      end: "04-15"
+    display:
+      material: EGG
+      name: "<green>Пасхальная награда</green>"
+    actions:
+      - type: MONEY
+        amount: 300
+  birthday:
+    name: "День рождения сервера"
+    event: birthday
+    date-range:
+      start: "07-01"
+      end: "07-01"
+    display:
+      material: CAKE
+      name: "<light_purple>День рождения!</light_purple>"
+    actions:
+      - type: MONEY
+        amount: 1000

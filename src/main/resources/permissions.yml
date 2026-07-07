@@ -1,0 +1,12 @@
+# SmartRewards — permission-узлы
+
+nodes:
+  use: smartrewards.use
+  vip: smartrewards.vip
+  admin: smartrewards.admin
+  reload: smartrewards.reload
+  reset: smartrewards.reset
+  give: smartrewards.give
+  editor: smartrewards.editor
+  backup: smartrewards.backup
+  info: smartrewards.info

@@ -1,5 +1,66 @@
 name: SmartRewards
-version: '1.0-SNAPSHOT'
+
+version: '${project.version}'
+
 main: me.azuredev.smartrewards.SmartRewardsPlugin
+
 api-version: '1.21'
-authors: [ ph4ntom ]
+
+author: AzureDev
+
+website: https://github.com
+
+depend:
+  - Vault
+
+softdepend:
+  - PlaceholderAPI
+  - LuckPerms
+  - ItemsAdder
+  - Oraxen
+  - MMOItems
+  - ExecutableItems
+  - ExcellentCrates
+  - DecentHolograms
+
+commands:
+  rewards:
+    description: SmartRewards main command
+    usage: /rewards [claim|streak|next|reload|reset|give|editor|info|backup|restore]
+    aliases: [sr, smartrewards]
+
+permissions:
+  smartrewards.use:
+    description: Access to rewards menu and claim
+    default: true
+  smartrewards.vip:
+    description: VIP reward bonuses
+    default: false
+  smartrewards.admin:
+    description: Full admin access
+    default: op
+    children:
+      smartrewards.reload: true
+      smartrewards.reset: true
+      smartrewards.give: true
+      smartrewards.editor: true
+      smartrewards.backup: true
+      smartrewards.info: true
+  smartrewards.reload:
+    description: Reload configuration
+    default: op
+  smartrewards.reset:
+    description: Reset player data
+    default: op
+  smartrewards.give:
+    description: Give rewards to players
+    default: op
+  smartrewards.editor:
+    description: Open reward editor
+    default: op
+  smartrewards.backup:
+    description: Backup and restore data
+    default: op
+  smartrewards.info:
+    description: View player reward info
+    default: op

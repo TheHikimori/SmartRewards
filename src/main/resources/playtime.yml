@@ -1,0 +1,23 @@
+enabled: true
+
+# Интервал в минутах -> награда
+intervals:
+  60:
+    name: "1 час игры"
+    actions:
+      - type: MONEY
+        amount: 100
+      - type: MESSAGE
+        text: "<aqua>+100$ за час игры!</aqua>"
+  180:
+    name: "3 часа игры"
+    actions:
+      - type: MONEY
+        amount: 350
+  360:
+    name: "6 часов игры"
+    actions:
+      - type: MONEY
+        amount: 800
+      - type: XP
+        amount: 200

@@ -1,0 +1,19 @@
+enabled: true
+
+reward:
+  name: "Ежемесячная награда"
+  display:
+    material: BEACON
+    name: "<light_purple>Ежемесячная награда</light_purple>"
+    lore:
+      - "<gray>30 дней подряд!</gray>"
+  actions:
+    - type: MONEY
+      amount: 25000
+    - type: COMMAND
+      executor: CONSOLE
+      command: "crate give {player} monthly"
+    - type: ITEM
+      material: NETHER_STAR
+      amount: 1
+      name: "<light_purple>Месячный трофей</light_purple>"
